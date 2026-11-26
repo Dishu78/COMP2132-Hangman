@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Word Detective, a fun Hangman word guessing game.">
+    <title>Word Detective | Hangman Game</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <header class="game-header">
+            <h1>Word Detective</h1>
+            <p>Crack the word before the mystery is solved!</p>
+        </header>
+
+        <main class="game-main">
+
+            <section class="illustration-section">
+                <div class="hangman-image">
+                    <img src="images/hangman-0.svg"
+                         alt="Hangman illustration"
+                         id="hangmanImage">
+                </div>
+
+                <div class="game-status">
+                    <p>Incorrect Guesses</p>
+                    <p id="guessCounter">0 / 6</p>
+                </div>
+            </section>
+
+            <section class="game-content">
+
+                <div class="hint-box">
+                    <h2>Detective's Clue</h2>
+                    <p id="hintText">Loading hint...</p>
+                </div>
+
+                <div class="word-display" id="wordDisplay"></div>
+
+                <p id="gameMessage" class="game-message">
+                    Choose a letter to begin!
+                </p>
+
+                <div class="keyboard" id="keyboard"></div>
+
+                <button id="playAgainButton"
+                        class="play-again-button"
+                        hidden>
+                    Play Again
+                </button>
+
+            </section>
+
+        </main>
+
+        <footer class="game-footer">
+            <p>
+                Guess the hidden word one letter at a time.
+                You have 6 chances to solve the mystery!
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
